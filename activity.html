@@ -1,0 +1,123 @@
+<DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="//code.cdn.mozilla.net/fonts/fira.css">
+    <title>Make Something with Webmaker</title>
+    <style>
+      html {
+        background: linear-gradient(135deg, #4c88ef 0%,#17e4d9 100%);
+        background-attachment: fixed;
+        background-size: contain;
+      }
+
+      html, body {
+        width: 100%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+      }
+
+      body {
+        font-family: FiraSans, 'Fira Sans', 'Open Sans';
+        font-size: 18pt;
+        color: white;
+      }
+
+      a {
+        color: white;
+      }
+
+      #main {
+        margin: 3em auto;
+        width: 800px;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .clear {
+        clear: both;
+      }
+
+      .instructions {
+        width: 62.5%;
+        float: right;
+      }
+
+      .screenshot.bigscreen {
+        float: left;
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+      }
+
+      .screenshot.smallscreen {
+        margin: 0 auto;
+        width: 350px;
+        display: none;
+      }
+
+      ol {
+        padding-left: 2em;
+      }
+
+      li {
+        padding-bottom: 1em;
+      }
+
+      @media (max-width: 800px) {
+        body {
+          font-size: 14pt;
+        }
+
+        #main {
+          width: 350px;
+        }
+
+        .screenshot.bigscreen {
+          display: none;
+        }
+
+        .screenshot.smallscreen {
+          display: block;
+        }
+
+        .instructions {
+          width: auto;
+        }
+
+        ol {
+          padding-left: initial;
+        }
+
+        li {
+          padding-bottom: 0;
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="main">
+      <h1>Make something with Webmaker!</h1>
+      <img class="screenshot left bigscreen" src="https://beta.webmaker.org/images/hero@2x.png">
+      <div class="instructions">
+        <ol>
+          <li>On an Android phone, go to <a href="http://bit.ly/download-wm">bit.ly/download-wm</a> to download Webmaker.</li>
+          <li>After installing, open the Webmaker app and explore the projects people have made.</li>
+          <li>Click on the "Make" tab and start a new project.</li>
+          <li>Make something! Check out <a href="#">this list</a> for inspiration.</li>
+          <li>Give your project a title and share it with @webmaker or <a href="bobby@mozillafoundation.org">bobby@mozillafoundation.org</a></li>
+        </ol>
+      </div>
+      <div class="clear"></div>
+      <img class="screenshot smallscreen" src="https://beta.webmaker.org/images/hero@2x.png">
+      <p class="clear"></p>
+    </div>
+  </body>
+</html>
